@@ -9,8 +9,6 @@
 
 You can specify the path to the gomplate binary by setting the `GOMPLATE_PATH` environment variable.
 
-```bash
-
 ## Installation
 
 ```bash
