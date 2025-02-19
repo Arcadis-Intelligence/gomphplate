@@ -1,8 +1,8 @@
 {
     "name": "arc/gomphplate",
     "description": "A wrapper for the yaml templating engine gomplate",
-    "homepage" : "https://github.com/arcadis-intelligence/gomphplate",
-    "version": "0.0.0",
+    "homepage": "https://github.com/arcadis-intelligence/gomphplate",
+    "version": "0.1.0",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
@@ -32,9 +32,9 @@
             "Arc\\Gomphplate\\": "src/"
         }
     },
-    "autoload-dev" : {
-        "psr-4" : {
-            "Arc\\Gomphplate\\Tests\\" : "tests/"
+    "autoload-dev": {
+        "psr-4": {
+            "Arc\\Gomphplate\\Tests\\": "tests/"
         }
     },
     "scripts": {
