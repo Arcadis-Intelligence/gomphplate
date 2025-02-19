@@ -1,0 +1,33 @@
+name: 🧹 Check & fix styling
+
+on: [push]
+
+permissions: 
+  contents: write
+  id-token: write
+
+jobs:
+  php-cs-fixer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Install dependencies
+        run: composer install --no-progress
+
+      - name: Run PHP CS Fixer
+        run: composer format
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Fix styling

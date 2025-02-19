@@ -1,0 +1,13 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Variable \$dataFile might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Gomphplate.php
+
+		-
+			message: '#^Variable \$templateFile might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Gomphplate.php

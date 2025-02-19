@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+    "changelog-sections": [
+        {
+            "type": "feat",
+            "section": "✨ Features",
+            "hidden": false
+        },
+        {
+            "type": "fix",
+            "section": "🐛 Bug Fixes",
+            "hidden": false
+        },
+        {
+            "type": "chore",
+            "section": "🧹 Miscellaneous",
+            "hidden": false
+        },
+        {
+            "type": "ci",
+            "section": "🤖 CI/CD",
+            "hidden": false
+        }
+    ],
+    "include-component-in-tag": false,
+    "release-type": "php",
+    "packages": {
+        ".": {}
+    }
+}

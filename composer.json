@@ -1,0 +1,45 @@
+{
+    "name": "arc/gomphplate",
+    "description": "A wrapper for the yaml templating engine gomplate",
+    "homepage" : "https://github.com/arcadis-intelligence/gomphplate",
+    "version": "0.0.0",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Alex Tweney-MacKenzie",
+            "email": "alex.tweneymackenzie@arcadis.com"
+        }
+    ],
+    "keywords": [
+        "gomplate",
+        "yaml",
+        "templating"
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/process": "^7.2",
+        "illuminate/contracts": "^11.43",
+        "symfony/filesystem": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "friendsofphp/php-cs-fixer": "^3.69",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arc\\Gomphplate\\": "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Arc\\Gomphplate\\Tests\\" : "tests/"
+        }
+    },
+    "scripts": {
+        "format": "./vendor/bin/php-cs-fixer fix .",
+        "test": "./vendor/bin/phpunit",
+        "analyse": "./vendor/bin/phpstan analyse"
+    }
+}
