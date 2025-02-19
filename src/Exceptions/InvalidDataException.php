@@ -1,6 +1,6 @@
 <?php
 
-namespace Arc\Gomphplate\Exceptions;
+namespace ArcadisIntelligence\Gomphplate\Exceptions;
 
 class InvalidDataException extends \Exception
 {

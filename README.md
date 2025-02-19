@@ -14,14 +14,14 @@ You can specify the path to the gomplate binary by setting the `GOMPLATE_PATH` e
 ## Installation
 
 ```bash
-composer require arc/gomphplate
+composer require acradis-intelligence/gomphplate
 ```
 
 ## Usage
 
 ```php
 
-use Arc\Gomphplate\Gomphplate;
+use ArcadisIntelligence\Gomphplate\Gomphplate;
 
 $template = <<<YAML
 people:

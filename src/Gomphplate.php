@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Arc\Gomphplate;
+namespace ArcadisIntelligence\Gomphplate;
 
-use Arc\Gomphplate\Exceptions\GomplateExecutionException;
-use Arc\Gomphplate\Exceptions\GomplateNotFoundException;
-use Arc\Gomphplate\Exceptions\InvalidDataException;
+use ArcadisIntelligence\Gomphplate\Exceptions\GomplateExecutionException;
+use ArcadisIntelligence\Gomphplate\Exceptions\GomplateNotFoundException;
+use ArcadisIntelligence\Gomphplate\Exceptions\InvalidDataException;
 use Exception;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Process\Process;

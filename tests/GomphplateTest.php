@@ -1,9 +1,9 @@
 <?php
 
-namespace Arc\Gomphplate\Tests;
+namespace ArcadisIntelligence\Gomphplate\Tests;
 
-use Arc\Gomphplate\Exceptions\InvalidDataException;
-use Arc\Gomphplate\Gomphplate;
+use ArcadisIntelligence\Gomphplate\Exceptions\InvalidDataException;
+use ArcadisIntelligence\Gomphplate\Gomphplate;
 use PHPUnit\Framework\TestCase;
 
 class GomphplateTest extends TestCase

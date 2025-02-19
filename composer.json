@@ -1,5 +1,5 @@
 {
-    "name": "arc/gomphplate",
+    "name": "arcadis-intelligence/gomphplate",
     "description": "A wrapper for the yaml templating engine gomplate",
     "homepage": "https://github.com/arcadis-intelligence/gomphplate",
     "version": "0.1.0",
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Arc\\Gomphplate\\": "src/"
+            "ArcadisIntelligence\\Gomphplate\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Arc\\Gomphplate\\Tests\\": "tests/"
+    "autoload-dev" : {
+        "psr-4" : {
+            "ArcadisIntelligence\\Gomphplate\\Tests\\" : "tests/"
         }
     },
     "scripts": {
