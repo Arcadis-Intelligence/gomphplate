@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.1.1...v0.1.2) (2025-02-19)
+
+
+### 🧹 Miscellaneous
+
+* fix readme ([776f66b](https://github.com/Arcadis-Intelligence/gomphplate/commit/776f66b07c349c8363e89914dfb369f031c35bea))
+
 ## [0.1.1](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.1.0...v0.1.1) (2025-02-19)
 
 
