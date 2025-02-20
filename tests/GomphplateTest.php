@@ -41,18 +41,18 @@ YAML;
         $result = Gomphplate::renderYamlFromString($template, $data);
         $this->assertEquals($expected, trim($result));
     }
-    
+
     public function testRenderYamlFromFile()
     {
         $templatePath = __DIR__ . '/fixtures/template.yaml';
-        
+
         $data = [
             'people' => [
                 ['name' => 'Alice', 'age' => 30],
                 ['name' => 'Bob', 'age' => 25],
             ]
         ];
-        
+
         $expected = <<<YAML
 people:
   - name: Alice
@@ -60,7 +60,7 @@ people:
   - name: Bob
     age: 25
 YAML;
-        
+
         $result = Gomphplate::renderYamlFromFile($templatePath, $data);
         $this->assertEquals($expected, trim($result));
     }
