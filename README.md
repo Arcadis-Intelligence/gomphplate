@@ -36,7 +36,7 @@ $data = [
     ],
 ];
 
-$renderedYaml = Gomphplate::renderYaml($template, json_encode($data));
+$renderedYaml = Gomphplate::renderYaml($template, $data);
 ```
 
 Should produce

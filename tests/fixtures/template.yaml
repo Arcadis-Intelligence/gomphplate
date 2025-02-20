@@ -1,0 +1,5 @@
+people:
+  {{- range .people }}
+  - name: {{ .name }}
+    age: {{ .age }}
+  {{- end }}

@@ -13,7 +13,7 @@ class GomphplateTest extends TestCase
         parent::setUp();
     }
 
-    public function testRenderYamlSuccess()
+    public function testRenderYamlFromStringSuccess()
     {
         $template = <<<YAML
 people:
@@ -38,13 +38,30 @@ people:
         age: 25
 YAML;
 
-        $result = Gomphplate::renderYaml($template, json_encode($data));
+        $result = Gomphplate::renderYamlFromString($template, $data);
         $this->assertEquals($expected, trim($result));
     }
-
-    public function testRenderYamlInvalidJson()
+    
+    public function testRenderYamlFromFile()
     {
-        $this->expectException(InvalidDataException::class);
-        Gomphplate::renderYaml("template", "invalid json");
+        $templatePath = __DIR__ . '/fixtures/template.yaml';
+        
+        $data = [
+            'people' => [
+                ['name' => 'Alice', 'age' => 30],
+                ['name' => 'Bob', 'age' => 25],
+            ]
+        ];
+        
+        $expected = <<<YAML
+people:
+  - name: Alice
+    age: 30
+  - name: Bob
+    age: 25
+YAML;
+        
+        $result = Gomphplate::renderYamlFromFile($templatePath, $data);
+        $this->assertEquals($expected, trim($result));
     }
 }

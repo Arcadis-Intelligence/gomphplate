@@ -17,7 +17,7 @@
         "templating"
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "symfony/process": "^7.2",
         "illuminate/contracts": "^11.43",
         "symfony/filesystem": "^7.2"
