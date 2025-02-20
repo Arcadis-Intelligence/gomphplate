@@ -1,6 +1,4 @@
-name: ⚡ Release
-
-run-name: "Release: ${{ contains(github.event.head_commit.message, 'release-please') && 'Create release' || 'Planning next release' }}"
+name: ⚡ Release Please
 
 on:
   push:
