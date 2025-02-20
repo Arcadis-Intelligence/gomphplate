@@ -18,7 +18,7 @@ class Gomphplate
      * Render a provided yaml template with the provided json data
      *
      * @param string $template The yaml template string
-     * @param array $json The json data array to render the template with
+     * @param array<mixed> $json The json data array to render the template with
      * @return string The rendered yaml string
      * @throws GomplateExecutionException
      * @throws GomplateNotFoundException
@@ -27,6 +27,10 @@ class Gomphplate
     public static function renderYamlFromString(string $template, array $json): string
     {
         $data = json_encode($json);
+
+        if ($data === false) {
+            throw new InvalidDataException();
+        }
 
         if (!self::isJsonValid($data)) {
             throw new InvalidDataException();
@@ -60,7 +64,7 @@ class Gomphplate
 
     /**
      * @param string $filePath The path to the yaml template file
-     * @param array $data The json data array to render the template with
+     * @param array<mixed> $json The json data array to render the template with
      * @throws InvalidDataException
      * @throws GomplateExecutionException
      * @throws GomplateNotFoundException
@@ -68,6 +72,10 @@ class Gomphplate
     public static function renderYamlFromFile(string $filePath, array $json): string
     {
         $data = json_encode($json);
+
+        if ($data === false) {
+            throw new InvalidDataException();
+        }
 
         if (!self::isJsonValid($data)) {
             throw new InvalidDataException();
