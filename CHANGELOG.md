@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.2.0](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.1.2...v0.2.0) (2025-02-20)
+
+
+### ✨ Features
+
+* add render from file ([b3d84fc](https://github.com/Arcadis-Intelligence/gomphplate/commit/b3d84fcbb4b42504087f86ea853568e14cf1d36e))
+
+
+### 🐛 Bug Fixes
+
+* fix phpstan errors ([a200135](https://github.com/Arcadis-Intelligence/gomphplate/commit/a200135c6518053df9dbca4b3ef86d407bc46e8e))
+
+
+### 🤖 CI/CD
+
+* remove run name from release action ([e52cd5d](https://github.com/Arcadis-Intelligence/gomphplate/commit/e52cd5d79604d5c0ca5829cf5d627eeb1bb76821))
+
 ## [0.1.2](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.1.1...v0.1.2) (2025-02-19)
 
 

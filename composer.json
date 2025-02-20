@@ -2,7 +2,7 @@
     "name": "arcadis-intelligence/gomphplate",
     "description": "A wrapper for the yaml templating engine gomplate",
     "homepage": "https://github.com/arcadis-intelligence/gomphplate",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
