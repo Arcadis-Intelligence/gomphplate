@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.2.0...v0.2.1) (2025-03-04)
+
+
+### 🐛 Bug Fixes
+
+* trim newline from gomplate binary output ([b3e0a3a](https://github.com/Arcadis-Intelligence/gomphplate/commit/b3e0a3aaa67b9459908da0c5695629f8ab5445ce))
+
 ## [0.2.0](https://github.com/Arcadis-Intelligence/gomphplate/compare/v0.1.2...v0.2.0) (2025-02-20)
 
 
