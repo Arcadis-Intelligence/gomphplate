@@ -122,7 +122,7 @@ class Gomphplate
             throw new GomplateNotFoundException();
         }
 
-        return $process->getOutput();
+        return trim($process->getOutput());
     }
 
     private static function isJsonValid(string $json): bool
