@@ -12,7 +12,7 @@ You can specify the path to the gomplate binary by setting the `GOMPLATE_PATH` e
 ## Installation
 
 ```bash
-composer require acradis-intelligence/gomphplate
+composer require arcadis-intelligence/gomphplate
 ```
 
 ## Usage
